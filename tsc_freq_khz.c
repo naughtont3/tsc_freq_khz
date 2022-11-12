@@ -52,6 +52,7 @@ static int __init tsc_khz_init(void) {
              error);
     } else {
       printk(KERN_INFO DRIVER_NAME ": successfully registered\n");
+      printk(KERN_INFO DRIVER_NAME ": /sys/devices/system/cpu/cpu0/tsc_freq_khz\n");
     }
   }
 
